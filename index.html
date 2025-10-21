@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calc">
+    <div class="display">
+      <div id="history" class="history"></div>
+      <div id="screen" class="screen" aria-live="polite">0</div>
+    </div>
+    <div class="keys">
+      <button data-act="ac" class="muted">AC</button>
+      <button data-act="del" class="muted">DEL</button>
+      <button data-key="%" class="muted">%</button>
+      <button data-key="/" class="op">÷</button>
+
+      <button data-key="7">7</button>
+      <button data-key="8">8</button>
+      <button data-key="9">9</button>
+      <button data-key="*" class="op">×</button>
+
+      <button data-key="4">4</button>
+      <button data-key="5">5</button>
+      <button data-key="6">6</button>
+      <button data-key="-" class="op">−</button>
+
+      <button data-key="1">1</button>
+      <button data-key="2">2</button>
+      <button data-key="3">3</button>
+      <button data-key="+" class="op">+</button>
+
+      <button data-key="(" class="muted">(</button>
+      <button data-key="0">0</button>
+      <button data-key=")" class="muted">)</button>
+      <button data-act="eq" class="eq">=</button>
+
+      <button data-key="." class="wide">.</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
